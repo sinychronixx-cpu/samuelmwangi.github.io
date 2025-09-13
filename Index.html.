@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog - OfflineDeeSpanish</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    article {
+      margin-bottom: 30px;
+    }
+    article h2 {
+      color: #111;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to OfflineDeeSpanish Blog</h1>
+    <p>Sharing thoughts, ideas, and stories with the world 🌍</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <article>
+      <h2>My First Blog Post</h2>
+      <p><em>Posted on September 13, 2025</em></p>
+      <p>Welcome to my blog! This is where I share my journey, experiences, and insights. Stay tuned for more updates.</p>
+    </article>
+
+    <article>
+      <h2>Another Story</h2>
+      <p><em>Coming soon...</em></p>
+      <p>More posts will appear here as I continue creating content.</p>
+    </article>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 OfflineDeeSpanish. All rights reserved.</p>
+    <div class="social">
+      <a href="https://www.tiktok.com/@offlinedeespanish" target="_blank">TikTok</a>
+      <a href="https://github.com/offlinedeespanish" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
