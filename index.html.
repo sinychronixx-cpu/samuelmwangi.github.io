@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OfflineDeeSpanish — Blog</title>
+
+  <!-- Font Awesome (optional for TikTok icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ---- Basic layout ---- */
+    :root {
+      --accent: #ffcc00;
+      --brand: #111;
+      --bg: #f8f8f9;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; font-family: Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+      background: var(--bg); color:#222; -webkit-font-smoothing:antialiased;
+    }
+
+    header { background:var(--brand); color:#fff; padding:28px 18px; text-align:center; }
+    header h1 { margin:0; font-size:1.6rem; letter-spacing:0.2px; }
+    header p { margin:6px 0 0; opacity:0.9; }
+
+    nav { background:#222; text-align:center; padding:8px 12px; }
+    nav a { color:#fff; text-decoration:none; margin:0 10px; font-weight:600; font-size:0.95rem; }
+    nav a:hover { color:var(--accent); }
+
+    .wrap { max-width:900px; margin:22px auto; padding:0 16px; }
+
+    .container { background:var(--card); border-radius:10px; padding:20px; box-shadow:0 6px 18px rgba(18,18,18,0.06); }
+
+    article.post { margin-bottom:20px; padding-bottom:18px; border-bottom:1px solid #eee; }
+    article.post h2 { margin:0 0 8px; color:#111; }
+    article.post .meta { color:#666; font-size:0.9rem; margin-bottom:12px; }
+    article.post p { margin:0; line-height:1.6; }
+
+    .read-more { display:inline-block; margin-top:10px; padding:8px 12px; background:var(--brand); color:#fff; text-decoration:none; border-radius:6px; }
+    .read-more:hover { background:var(--accent); color:var(--brand); }
+
+    footer { text-align:center; padding:18px; margin-top:18px; color:#fff; background:var(--brand); }
+    .social a { color: var(--accent); text-decoration:none; margin: 0 8px; font-weight:700; }
+
+    /* ---- Password overlay (optional gate) ---- */
+    #pw-overlay {
+      position:fixed; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+      display:flex; align-items:center; justify-content:center; z-index:9999;
+    }
+    #pw-box {
+      background:#fff; color:#111; padding:24px; width:90%; max-width:420px; border-radius:12px; text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    }
+    #pw-box h3 { margin:0 0 8px; }
+    #pw-box p { margin:0 0 14px; color:#444; }
+    #pw-box input { width:100%; padding:10px 12px; font-size:16px; margin-bottom:10px; border-radius:8px; border:1px solid #ddd; }
+    #pw-box button { width:100%; padding:10px; border-radius:8px; border:0; background:var(--brand); color:#fff; font-weight:700; cursor:pointer; }
+    #pw-box button:hover { background:var(--accent); color:var(--brand); }
+
+    /* small screens */
+    @media (max-width:480px){ header h1{font-size:1.4rem;} nav a{display:inline-block;margin:6px;} .read-more{padding:8px 10px;} }
+  </style>
+</head>
+<body>
+
+  <!-- Optional Password Overlay: remove this whole section to disable the gate -->
+  <div id="pw-overlay" aria-hidden="false">
+    <div id="pw-box" role="dialog" aria-label="Site access">
+      <h3>Enter password to continue</h3>
+      <p>This site is protected — enter the access code below</p>
+      <input id="pw-input" type="password" placeholder="Enter password" aria-label="Password">
+      <button id="pw-submit">Enter</button>
+      <p id="pw-error" style="color:#c00;display:none;margin-top:10px;font-size:0.95rem;"></p>
+    </div>
+  </div>
+
+  <!-- Visible site -->
+  <header>
+    <h1>OfflineDeeSpanish</h1>
+    <p>Thoughts • Spanish • TikTok tips</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="wrap">
+    <div class="container" id="about">
+      <h2>About</h2>
+      <p>Hi — I’m OfflineDee. I create short Spanish-learning videos on TikTok and write about language tips, content creation, and life lessons. Follow my TikTok or read my posts below.</p>
+    </div>
+
+    <div class="container" id="blog" style="margin-top:18px;">
+      <!-- Post 1 -->
+      <article class="post">
